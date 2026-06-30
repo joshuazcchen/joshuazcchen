@@ -47,13 +47,14 @@ jobs:
           plugin_habits_charts: yes
           plugin_habits_trim: yes
           plugin_habits_charts_type: classic
-          config_timezone: America/Toronto
+          config_timezone: America/Vancouver
 
       - name: Recent Languages
         uses: lowlighter/metrics@latest
         with:
           filename: lines.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: repositories
+          base: ""
           plugin_lines: yes
           plugin_lines_delay: 30
+          plugin_lines_sections: history
