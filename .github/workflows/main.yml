@@ -47,18 +47,13 @@ jobs:
           plugin_habits_charts: yes
           plugin_habits_trim: yes
           plugin_habits_charts_type: classic
-          config_timezone: America/Vancouver
+          config_timezone: America/Toronto
 
       - name: Recent Languages
-        uses: dkhokhlov/metrics@master
+        uses: lowlighter/metrics@latest
         with:
-          filename: languages_recent.svg
+          filename: lines.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_languages: yes
-          plugin_languages_ignored: >-
-            html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
-            gnuplot
-          plugin_languages_details: bytes-size, percentage
-          plugin_languages_limit: 8
-          plugin_languages_sections: recently-used
+          base: repositories
+          plugin_lines: yes
+          plugin_lines_delay: 30

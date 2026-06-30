@@ -5,5 +5,5 @@
 
 <p align="center">
   <img src="./languages_overall.svg" alt="Overall Languages Stats" width="49%" align="top">
-  <img src="./languages_recent.svg" alt="Recent Languages Stats" width="49%" align="top">
+  <img src="./lines.svg" alt="Lines changed" width="49%" align="top">
 </p>
