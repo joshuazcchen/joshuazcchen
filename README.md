@@ -7,3 +7,5 @@
   <img src="./habits.svg" alt="Coding Habits" width="49%" align="top">
   <img src="./lines.svg" alt="Lines changed" width="49%" align="top">
 </p>
+
+my keyboard died and forced me on a break 😭
